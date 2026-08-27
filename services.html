@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services | The propertyscope</title>
+<meta name="description" content="Explore Kano Property Mart's full range of services — real estate news, property marketing, market research, investment promotion, consultancy, and more.">
+<link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          kpmblue: '#0b6aa2', kpmbluedark: '#084d78', kpmnavy: '#0a2e47',
+          kpmblack: '#1a1a1a', kpmred: '#9c2b26', kpmredlight: '#c23a30', kpmcream: '#f7f8fa'
+        },
+        fontFamily: { display: ['Poppins', 'sans-serif'], sans: ['Inter', 'sans-serif'] }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased text-kpmblack">
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center shrink-0">
+        <img src="images/logo.jpeg" alt="Kano Property Mart logo" class="logo-img">
+      </a>
+      <nav class="hidden lg:flex items-center gap-9 font-display font-medium text-[15px]">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link active">Our Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <a href="contact.html" class="hidden lg:inline-flex btn btn-blue !py-3 !px-6 !text-sm">Get In Touch</a>
+      <button id="navToggle" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden text-kpmnavy p-2">
+        <svg id="iconMenuOpen" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="iconMenuClose" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="lg:hidden">
+      <nav class="flex flex-col gap-1 pb-5 font-display font-medium text-[15px] border-t border-gray-100 pt-3">
+        <a href="index.html" class="nav-link py-2">Home</a>
+        <a href="about.html" class="nav-link py-2">About Us</a>
+        <a href="services.html" class="nav-link active py-2">Our Services</a>
+        <a href="gallery.html" class="nav-link py-2">Gallery</a>
+        <a href="contact.html" class="nav-link py-2">Contact Us</a>
+        <a href="contact.html" class="btn btn-blue !py-3 !px-6 !text-sm mt-2 w-fit">Get In Touch</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE BANNER ============ -->
+<section class="page-banner h-[46vh] min-h-[340px] mt-20 relative flex items-center">
+  <img src="images/optimized/image7.jpg" alt="Contemporary residential architecture" class="absolute inset-0">
+  <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 w-full">
+    <p class="text-kpmredlight font-display font-semibold text-sm mb-3 tracking-wide">WHAT WE OFFER</p>
+    <h1 class="font-display font-extrabold text-4xl sm:text-5xl text-white">Our Services</h1>
+  </div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="py-16 sm:py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 text-center reveal">
+    <p class="text-gray-600 leading-relaxed text-lg">
+      At Kano Property Mart (KPM), we are more than a real estate publication. We are a comprehensive real estate media, marketing, research, and investment platform committed to transforming the property sector through credible information, strategic partnerships, and innovative solutions.
+    </p>
+    <p class="text-gray-400 text-sm mt-6">Tap any service below to expand full details.</p>
+  </div>
+</section>
+
+<!-- ============ SERVICES ACCORDION ============ -->
+<section class="pb-24 bg-white">
+  <div class="max-w-4xl mx-auto px-5 sm:px-8 space-y-5">
+
+    <!-- 1 -->
+    <div id="news-journalism" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2zM7 8h10M7 12h10M7 16h6"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">01 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Real Estate News &amp; Journalism</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed">We deliver timely, accurate, and solutions-oriented news covering the real estate industry in Kano, Nigeria, and beyond. Our editorial content includes breaking news, investigative reports, policy updates, market trends, expert analyses, and informed commentaries.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div id="marketing-advertising" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 22V12h6v10"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">02 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Property Marketing &amp; Advertising</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">We provide effective marketing solutions that connect property owners, developers, agents, and investors with potential buyers and tenants through our print and digital platforms.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Property Listings</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Property Sales &amp; Rentals Promotion</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Real Estate Project Marketing</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Corporate Advertising</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Brand Promotion</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Classified Advertisements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div id="research-intelligence" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">03 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Market Research &amp; Intelligence</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">Our research services provide valuable insights that support informed investment and business decisions.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Property Market Reports</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Land and Housing Market Analysis</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Property Price Trends</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Investment Feasibility Studies</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Industry Research</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Sector Performance Reports</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div id="investment-promotion" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">04 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Investment Promotion</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed">KPM promotes investment opportunities within the real estate sector by connecting investors with viable projects and providing market intelligence that encourages sustainable investment.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div id="media-communications" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">05 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Media &amp; Corporate Communications</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">We help organizations strengthen their public image through strategic communication and media engagement.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Public Relations</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Corporate Branding</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Press Release Distribution</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Corporate Profile Development</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Media Coverage</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Reputation Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div id="professional-directory" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">06 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Professional Directory</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">Our platform connects clients with trusted professionals across the real estate value chain.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Estate Surveyors &amp; Valuers</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Architects</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Engineers</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Quantity Surveyors</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Town Planners</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Property Lawyers</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Building Contractors</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Mortgage &amp; Financial Institutions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div id="digital-marketplace" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">07 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Digital Property Marketplace</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">Our digital platform enables property buyers, sellers, and investors to discover verified opportunities conveniently.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Online Property Listings</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Featured Properties</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Commercial Property Listings</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Residential Property Listings</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Virtual Property Showcases</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div id="events-engagement" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">08 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Events &amp; Industry Engagement</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">We organize and promote events that foster collaboration, innovation, and knowledge sharing within the real estate sector.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Property Expos</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Investment Forums</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Conferences</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Stakeholder Dialogues</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Public Lectures</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Business Networking Sessions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div id="training-development" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422A12.083 12.083 0 0121 12c0 2.755-1.34 5.19-3.41 6.72M12 14l-6.16-3.422A12.083 12.083 0 003 12c0 2.755 1.34 5.19 3.41 6.72M12 14v7"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">09 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Training &amp; Capacity Development</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">KPM is committed to building knowledge and professional excellence across the industry.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Professional Workshops</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Real Estate Seminars</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Investment Education</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Skills Development Programmes</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Career Mentorship</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Student Development Initiatives</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div id="consultancy-advisory" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">10 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Consultancy &amp; Advisory Services</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">We provide strategic advisory services to individuals, organizations, investors, and public institutions.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Real Estate Market Advisory</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Investment Advisory</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Marketing Communications</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Research Consultancy</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Policy Advisory</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Media Consultancy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div id="publications" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">11 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Publications</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">KPM produces high-quality publications that keep stakeholders informed about developments in the real estate industry.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Kano Property Mart Newspaper</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Special Reports</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Annual Market Review</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Investment Guides</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Industry Magazines</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Project Profiles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div id="awards-recognition" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">12 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Awards &amp; Recognition</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">We celebrate excellence by recognizing outstanding contributions to the real estate industry.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Outstanding Real Estate Developer</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Property Investment Excellence</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Innovation in Real Estate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Emerging Industry Leader</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Corporate Excellence Award</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Young Professional Award</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div id="advocacy-community" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21C12 21 4 14.5 4 9a5 5 0 0110-1 5 5 0 0110 1c0 5.5-8 12-8 12z"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">13 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Advocacy &amp; Community Development</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed">We champion initiatives that promote ethical practices, transparency, sustainable urban development, and responsible property investment, while supporting policies that improve access to quality housing.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14 -->
+    <div id="multimedia-content" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">14 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Multimedia &amp; Digital Content</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">We engage our audience through diverse multimedia platforms.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Podcasts</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Video Interviews</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Documentaries</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Webinars</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Live Event Coverage</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Social Media Content</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 15 -->
+    <div id="data-information" class="service-card reveal bg-kpmcream rounded-xl border border-gray-100 scroll-mt-28">
+      <button class="service-toggle w-full flex items-center gap-5 p-6 sm:p-7 text-left">
+        <div class="icon-tile shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 1.657 3.582 3 8 3s8-1.343 8-3V7M4 7c0 1.657 3.582 3 8 3s8-1.343 8-3M4 7c0-1.657 3.582-3 8-3s8 1.343 8 3m0 5c0 1.657-3.582 3-8 3s-8-1.343-8-3"/></svg></div>
+        <div class="flex-1">
+          <p class="text-xs font-display font-semibold text-kpmred mb-1">15 &nbsp;·&nbsp; SERVICE</p>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-kpmnavy">Data &amp; Information Services</h3>
+        </div>
+        <svg class="chevron w-5 h-5 text-kpmnavy shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="service-details px-6 sm:px-7">
+        <div class="pb-7 pl-[68px] -mt-2">
+          <p class="text-gray-600 leading-relaxed mb-4">We provide reliable real estate data and industry intelligence to support businesses, investors, researchers, and policymakers.</p>
+          <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Property Market Database</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Industry Statistics</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Land Information</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Investment Data</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Market Indicators</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-kpmred"></span>Sector Reports</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="bg-kpmnavy py-16">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-wrap items-center justify-between gap-8">
+    <div class="max-w-xl reveal">
+      <h2 class="font-display font-bold text-2xl sm:text-3xl text-white mb-2">Need a specific service?</h2>
+      <p class="text-gray-300">Talk to our team about news coverage, market research, or property marketing tailored to your needs.</p>
+    </div>
+    <div class="flex flex-wrap gap-4 reveal">
+      <a href="contact.html" class="btn btn-primary">Request a Service</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-[#071c2c] text-gray-300 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+      <div>
+        <img src="images/logo.jpeg" alt="Kano Property Mart logo" class="h-11 w-auto mb-5 rounded bg-white p-1.5">
+        <p class="text-sm leading-relaxed text-gray-400">A leading real estate media, marketing, and research platform promoting transparency and sustainable growth across Kano's property sector.</p>
+      </div>
+      <div>
+        <h5 class="font-display font-semibold text-white mb-5 text-sm tracking-wide">QUICK LINKS</h5>
+        <ul class="space-y-3 text-sm">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Our Services</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-display font-semibold text-white mb-5 text-sm tracking-wide">SERVICES</h5>
+        <ul class="space-y-3 text-sm">
+          <li><a href="services.html#news-journalism" class="hover:text-white transition-colors">News &amp; Journalism</a></li>
+          <li><a href="services.html#marketing-advertising" class="hover:text-white transition-colors">Property Marketing</a></li>
+          <li><a href="services.html#research-intelligence" class="hover:text-white transition-colors">Market Research</a></li>
+          <li><a href="services.html#digital-marketplace" class="hover:text-white transition-colors">Digital Marketplace</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-display font-semibold text-white mb-5 text-sm tracking-wide">CONTACT</h5>
+        <ul class="space-y-3 text-sm text-gray-400">
+          <li class="flex gap-2.5"><svg class="w-4 h-4 mt-0.5 shrink-0 text-kpmred" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Kano, Nigeria</li>
+          <li class="flex gap-2.5"><svg class="w-4 h-4 mt-0.5 shrink-0 text-kpmred" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>info@kanopropertymart.com</li>
+          <li class="flex gap-2.5"><svg class="w-4 h-4 mt-0.5 shrink-0 text-kpmred" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>+234 800 000 0000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-wrap items-center justify-between gap-4 text-xs text-gray-500">
+      <p>&copy; <span id="currentYear"></span> Kano Property Mart. All rights reserved.</p>
+      <p>Transforming Real Estate for Prosperity</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>

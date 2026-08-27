@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Propertyscope | Real Estate News, Research &amp; Marketing</title>
+<meta name="description" content="The PropertyScope (TPS) is a leading real estate media, marketing, and research platform promoting transparency, professionalism, and sustainable growth in the real estate sector.">
+<link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          kpmblue: '#0b6aa2',
+          kpmbluedark: '#084d78',
+          kpmnavy: '#0a2e47',
+          kpmblack: '#1a1a1a',
+          kpmred: '#9c2b26',
+          kpmredlight: '#c23a30',
+          kpmcream: '#f7f8fa'
+        },
+        fontFamily: {
+          display: ['Poppins', 'sans-serif'],
+          sans: ['Inter', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased text-kpmblack">
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center shrink-0">
+        <img src="images/logo.jpeg" alt="Kano Property Mart logo" class="logo-img">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-9 font-display font-medium text-[15px]">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Our Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <a href="contact.html" class="hidden lg:inline-flex btn btn-blue !py-3 !px-6 !text-sm">Get In Touch</a>
+
+      <button id="navToggle" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden text-kpmnavy p-2">
+        <svg id="iconMenuOpen" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="iconMenuClose" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="lg:hidden">
+      <nav class="flex flex-col gap-1 pb-5 font-display font-medium text-[15px] border-t border-gray-100 pt-3">
+        <a href="index.html" class="nav-link active py-2">Home</a>
+        <a href="about.html" class="nav-link py-2">About Us</a>
+        <a href="services.html" class="nav-link py-2">Our Services</a>
+        <a href="gallery.html" class="nav-link py-2">Gallery</a>
+        <a href="contact.html" class="nav-link py-2">Contact Us</a>
+        <a href="contact.html" class="btn btn-blue !py-3 !px-6 !text-sm mt-2 w-fit">Get In Touch</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO SLIDESHOW ============ -->
+<section id="heroSlideshow" class="hero-slideshow" aria-label="Welcome to Kano Property Mart">
+  <div class="hero-slide">
+    <img src="images/optimized/image2.jpg" alt="Modern villa with infinity pool" loading="eager">
+  </div>
+  <div class="hero-slide">
+    <img src="images/optimized/image5.jpg" alt="Brick family home with landscaped lawn" loading="lazy">
+  </div>
+  <div class="hero-slide">
+    <img src="images/optimized/image1.jpg" alt="Aerial view of a residential neighbourhood" loading="lazy">
+  </div>
+  <div class="hero-slide">
+    <img src="images/optimized/image7.jpg" alt="Contemporary duplex with timber screens" loading="lazy">
+  </div>
+  <div class="hero-slide">
+    <img src="images/optimized/image3.jpg" alt="Suburban homes along a quiet street" loading="lazy">
+  </div>
+  <div class="hero-slide">
+    <img src="images/optimized/image10.jpg" alt="Modern black and white duplex residence" loading="lazy">
+  </div>
+  <div class="hero-slide">
+    <img src="images/optimized/image4.jpg" alt="Bright open-plan living room" loading="lazy">
+  </div>
+  <div class="hero-slide">
+    <img src="images/optimized/image6.jpg" alt="Row of colourful modern townhouses" loading="lazy">
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content h-full flex items-center">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 w-full">
+      <div class="max-w-2xl text-white pt-16">
+        <p class="hero-eyebrow reveal in-view text-kpmredlight font-display font-semibold text-sm mb-4">WELCOME TO THE  PROPERTYSCOPE & COMMUNICATIONS LTD</p>
+        <h1 class="reveal in-view font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
+          Transforming Real Estate <span class="text-kpmredlight">for Prosperity</span>
+        </h1>
+        <p class="reveal in-view text-gray-100/90 text-base sm:text-lg leading-relaxed mb-9 max-w-xl">
+          TPS is a leading real estate media, marketing, and research platform connecting investors, developers, professionals, and the public with the knowledge and opportunities driving growth in Kano's property sector.
+        </p>
+        <div class="reveal in-view flex flex-wrap gap-4">
+          <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="heroPrev" class="hero-arrow left-4 sm:left-8" aria-label="Previous slide">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+  </button>
+  <button id="heroNext" class="hero-arrow right-4 sm:right-8" aria-label="Next slide">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+  </button>
+
+  <div id="heroDots" class="hero-dots flex items-center gap-2.5"></div>
+</section>
+
+<!-- ============ INTRO / ABOUT SNIPPET ============ -->
+<section class="py-20 sm:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-14 items-center">
+    <div class="lg:col-span-5 reveal">
+      <p class="section-label text-kpmred font-display font-semibold text-sm mb-3">WHO WE ARE</p>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-kpmnavy leading-tight mb-6">
+        Nigeria's Trusted Voice for Real Estate Transformation
+      </h2>
+      <p class="text-gray-600 leading-relaxed mb-5">
+        The PropertyScope Communicatins limited  (TPS) is a leading real estate media, marketing, and research platform dedicated to promoting transparency, professionalism, and sustainable growth in the real estate sector. Founded by a team of experienced journalists and communication professionals with a strong background in financial journalism and marketing communications, KPM is driven by a passion for ethical, credible, and solutions-oriented reporting.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        Based in Kano, Nigeria's historic commercial hub, we are committed to showcasing investment opportunities, promoting ethical business practices, and positioning Kano as a premier destination for real estate investment.
+      </p>
+      <a href="about.html" class="btn btn-blue">Learn More About Us</a>
+    </div>
+    <div class="lg:col-span-7 reveal">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="rounded-xl overflow-hidden h-64 sm:h-72 mt-8">
+          <img src="images/optimized/image9.jpg" alt="Warm living room interior" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden h-64 sm:h-72">
+          <img src="images/optimized/image8.jpg" alt="Apartment residence behind hedges" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS STRIP ============ -->
+<section class="bg-kpmnavy py-12">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="reveal">
+      <p class="stat-number text-white font-bold text-3xl sm:text-4xl mb-1">15+</p>
+      <p class="text-gray-300 text-sm font-medium">Core Service Lines</p>
+    </div>
+    <div class="reveal">
+      <p class="stat-number text-white font-bold text-3xl sm:text-4xl mb-1">100%</p>
+      <p class="text-gray-300 text-sm font-medium">Ethical Reporting</p>
+    </div>
+    <div class="reveal">
+      <p class="stat-number text-white font-bold text-3xl sm:text-4xl mb-1">360°</p>
+      <p class="text-gray-300 text-sm font-medium">Market Intelligence</p>
+    </div>
+    <div class="reveal">
+      <p class="stat-number text-white font-bold text-3xl sm:text-4xl mb-1">01</p>
+      <p class="text-gray-300 text-sm font-medium">Trusted Kano Platform</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES SNIPPET ============ -->
+<section class="py-20 sm:py-28 bg-kpmcream">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-16 reveal">
+      <p class="section-label text-kpmred font-display font-semibold text-sm mb-3">WHAT WE OFFER</p>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-kpmnavy leading-tight">Our Services</h2>
+      <p class="text-gray-600 mt-4">
+        A comprehensive real estate media, marketing, research, and investment platform committed to transforming the property sector.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <div class="bg-white rounded-xl p-8 card-hover reveal">
+        <div class="icon-tile mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2zM7 8h10M7 12h10M7 16h6"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-kpmnavy mb-2">Real Estate News &amp; Journalism</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Timely, accurate, solutions-oriented news covering breaking stories, investigative reports, policy updates, and market trends.</p>
+        <a href="services.html#news-journalism" class="text-kpmblue font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 card-hover reveal">
+        <div class="icon-tile mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 22V12h6v10"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-kpmnavy mb-2">Property Marketing &amp; Advertising</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Effective marketing solutions connecting owners, developers, agents, and investors with buyers and tenants.</p>
+        <a href="services.html#marketing-advertising" class="text-kpmblue font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 card-hover reveal">
+        <div class="icon-tile mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-kpmnavy mb-2">Market Research &amp; Intelligence</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Property market reports, price trends, feasibility studies, and sector performance analysis for informed decisions.</p>
+        <a href="services.html#research-intelligence" class="text-kpmblue font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 card-hover reveal">
+        <div class="icon-tile mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-kpmnavy mb-2">Digital Property Marketplace</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Online listings, featured properties, and virtual showcases for residential and commercial real estate.</p>
+        <a href="services.html#digital-marketplace" class="text-kpmblue font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 card-hover reveal">
+        <div class="icon-tile mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-kpmnavy mb-2">Professional Directory</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Connecting clients with trusted surveyors, architects, engineers, lawyers, and financial institutions.</p>
+        <a href="services.html#professional-directory" class="text-kpmblue font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 card-hover reveal">
+        <div class="icon-tile mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-kpmnavy mb-2">Events &amp; Industry Engagement</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Property expos, investment forums, conferences, and stakeholder dialogues that foster collaboration.</p>
+        <a href="services.html#events-engagement" class="text-kpmblue font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-14 reveal">
+      <a href="services.html" class="btn btn-primary">View All 15 Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="py-20 sm:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-14 items-center">
+    <div class="lg:col-span-6 order-2 lg:order-1 reveal">
+      <div class="rounded-xl overflow-hidden shadow-xl">
+        <img src="images/optimized/image1.jpg" alt="Aerial view of a well-planned residential neighbourhood" class="w-full h-[420px] object-cover">
+      </div>
+    </div>
+    <div class="lg:col-span-6 order-1 lg:order-2 reveal">
+      <p class="section-label text-kpmred font-display font-semibold text-sm mb-3">WHY CHOOSE US</p>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-kpmnavy leading-tight mb-8">
+        Why Choose Kano Property Mart?
+      </h2>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3.5">
+          <span class="check-bullet mt-0.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="text-gray-700"><span class="font-semibold text-kpmnavy">Trusted and credible</span> real estate journalism</span>
+        </li>
+        <li class="flex items-start gap-3.5">
+          <span class="check-bullet mt-0.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="text-gray-700"><span class="font-semibold text-kpmnavy">Ethical and solutions-driven</span> reporting</span>
+        </li>
+        <li class="flex items-start gap-3.5">
+          <span class="check-bullet mt-0.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="text-gray-700"><span class="font-semibold text-kpmnavy">Comprehensive</span> market intelligence</span>
+        </li>
+        <li class="flex items-start gap-3.5">
+          <span class="check-bullet mt-0.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="text-gray-700"><span class="font-semibold text-kpmnavy">Strategic marketing</span> and advertising solutions</span>
+        </li>
+        <li class="flex items-start gap-3.5">
+          <span class="check-bullet mt-0.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="text-gray-700"><span class="font-semibold text-kpmnavy">Extensive professional</span> network</span>
+        </li>
+        <li class="flex items-start gap-3.5">
+          <span class="check-bullet mt-0.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="text-gray-700"><span class="font-semibold text-kpmnavy">Investment-focused</span> platform with innovative digital services</span>
+        </li>
+        <li class="flex items-start gap-3.5">
+          <span class="check-bullet mt-0.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="text-gray-700"><span class="font-semibold text-kpmnavy">Strong commitment</span> to transparency, professionalism, and sustainable development</span>
+        </li>
+        <li class="flex items-start gap-3.5">
+          <span class="check-bullet mt-0.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+          <span class="text-gray-700"><span class="font-semibold text-kpmnavy">Dedicated</span> to promoting Kano as a leading real estate investment destination</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY PREVIEW ============ -->
+<section class="py-20 sm:py-28 bg-kpmcream">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-12 reveal">
+      <div class="max-w-xl">
+        <p class="section-label text-kpmred font-display font-semibold text-sm mb-3">PROPERTY GALLERY</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-kpmnavy leading-tight">A Glimpse Into Kano's Real Estate Landscape</h2>
+      </div>
+      <a href="gallery.html" class="btn btn-blue">View Full Gallery</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div class="reveal rounded-xl overflow-hidden h-56"><img src="images/thumbs/image2.jpg" alt="Modern villa with pool" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+      <div class="reveal rounded-xl overflow-hidden h-56"><img src="images/thumbs/image6.jpg" alt="Colourful townhouses" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+      <div class="reveal rounded-xl overflow-hidden h-56"><img src="images/thumbs/image4.jpg" alt="Bright living room" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+      <div class="reveal rounded-xl overflow-hidden h-56"><img src="images/thumbs/image10.jpg" alt="Modern duplex residence" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="bg-kpmnavy py-16">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-wrap items-center justify-between gap-8">
+    <div class="max-w-xl reveal">
+      <h2 class="font-display font-bold text-2xl sm:text-3xl text-white mb-2">Ready to work with Kano Property Mart?</h2>
+      <p class="text-gray-300">List a property, request a market report, or partner with us on your next real estate story.</p>
+    </div>
+    <div class="flex flex-wrap gap-4 reveal">
+      <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+      <a href="services.html" class="btn btn-outline">See Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-[#071c2c] text-gray-300 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+      <div>
+        <img src="images/logo.jpeg" alt="Kano Property Mart logo" class="h-11 w-auto mb-5 rounded bg-white p-1.5">
+        <p class="text-sm leading-relaxed text-gray-400">A leading real estate media, marketing, and research platform promoting transparency and sustainable growth across Kano's property sector.</p>
+      </div>
+      <div>
+        <h5 class="font-display font-semibold text-white mb-5 text-sm tracking-wide">QUICK LINKS</h5>
+        <ul class="space-y-3 text-sm">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Our Services</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-display font-semibold text-white mb-5 text-sm tracking-wide">SERVICES</h5>
+        <ul class="space-y-3 text-sm">
+          <li><a href="services.html#news-journalism" class="hover:text-white transition-colors">News &amp; Journalism</a></li>
+          <li><a href="services.html#marketing-advertising" class="hover:text-white transition-colors">Property Marketing</a></li>
+          <li><a href="services.html#research-intelligence" class="hover:text-white transition-colors">Market Research</a></li>
+          <li><a href="services.html#digital-marketplace" class="hover:text-white transition-colors">Digital Marketplace</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-display font-semibold text-white mb-5 text-sm tracking-wide">CONTACT</h5>
+        <ul class="space-y-3 text-sm text-gray-400">
+          <li class="flex gap-2.5"><svg class="w-4 h-4 mt-0.5 shrink-0 text-kpmred" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Kano, Nigeria</li>
+          <li class="flex gap-2.5"><svg class="w-4 h-4 mt-0.5 shrink-0 text-kpmred" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>info@kanopropertymart.com</li>
+          <li class="flex gap-2.5"><svg class="w-4 h-4 mt-0.5 shrink-0 text-kpmred" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>+234 800 000 0000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-wrap items-center justify-between gap-4 text-xs text-gray-500">
+      <p>&copy; <span id="currentYear"></span> Kano Property Mart. All rights reserved.</p>
+      <p>Transforming Real Estate for Prosperity</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>
