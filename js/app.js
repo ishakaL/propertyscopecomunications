@@ -1,5 +1,5 @@
 /* ============================================================
-   Kano Property Mart — app.js
+   The PropertyScope — app.js
    Shared behaviours: nav, hero slideshow, reveal-on-scroll,
    service accordion, gallery lightbox, contact form, back-to-top
    ============================================================ */
